@@ -5,7 +5,7 @@ const ReadNumbers = require("./Shared/ReadNumbers");
 const { day1p1, day1p2 } = require('./Solutions/Day1/index');
 const { day2p1, day2p2 } = require('./Solutions/Day2/index');
 const { day3p1, day3p2 } = require('./Solutions/Day3/index');
-const {} = require('./Solutions/Day4/index');
+const { day4p1, day4p2 } = require('./Solutions/Day4/index');
 const {} = require('./Solutions/Day5/index');
 const {} = require('./Solutions/Day6/index');
 const {} = require('./Solutions/Day7/index');
@@ -32,10 +32,10 @@ const testFunction = () => {
 // day2p2();
 
 // day3p1();
-day3p2();
+// day3p2();
 
-// day4p1();
-// day4p2();
+day4p1();
+day4p2();
 
 // day5p1();
 // day5p2();
