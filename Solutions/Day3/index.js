@@ -1,4 +1,4 @@
-const readCharacters = require('../../Shared/ReadCharacters');
+const { readCharacters } = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const commonBits = (input, index) => {
@@ -59,12 +59,6 @@ const logic = (input) => {
     j++;
   }
 
-
-  console.log(gamma);
-  console.log(parseInt(gamma, 2));
-  console.log(epsilon);
-  console.log(parseInt(epsilon, 2));
-
   return parseInt(gamma, 2) * parseInt(epsilon, 2);
 }
 
@@ -90,10 +84,6 @@ const logic2 = (input) => {
       return item.charAt(i) === leastCommon;
     })
   }
-  console.log(oxygen);
-  console.log(carbon);
-  console.log(parseInt(oxygen, 2));
-  console.log(parseInt(carbon, 2));
   return parseInt(oxygen, 2) * parseInt(carbon, 2);
 }
 

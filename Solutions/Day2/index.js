@@ -1,4 +1,4 @@
-const readCharacters = require('../../Shared/ReadCharacters');
+const {readCharacters} = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const day2p1 = () => {

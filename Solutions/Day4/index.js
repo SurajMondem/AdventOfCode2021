@@ -1,4 +1,4 @@
-const readNumbers = require('../../Shared/ReadNumbers');
+const { readNumbers } = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const inputCleanUp = (inputs) => {
