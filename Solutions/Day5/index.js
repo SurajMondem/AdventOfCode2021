@@ -1,5 +1,5 @@
 const output = require('../../Shared/Output');
-const { readDay5Input } = require('../../Shared/ReadInputs');
+const { readInput } = require('../../Shared/ReadInputs');
 
 const initialMap = (rows, columns) => {
   return Array(rows).fill().map(() => Array(columns).fill(0));
@@ -138,7 +138,7 @@ const countOverlaps = (map) => {
 }
 
 const day5p1 = () => {
-  const input = readDay5Input('../Data/Day5/day5.txt'); // ['x1,y1', 'x2,y2']
+  const input = readInput('../Data/Day5/day5.txt', '5'); // ['x1,y1', 'x2,y2']
 
   const newMap = initialMap(1000,1000);
 
@@ -148,7 +148,7 @@ const day5p1 = () => {
 }
 
 const day5p2 = () => {
-  const input = readDay5Input('../Data/Day5/day5.txt'); // ['x1,y1', 'x2,y2']
+  const input = readInput('../Data/Day5/day5.txt', '6'); // ['x1,y1', 'x2,y2']
 
   const newMap = initialMap(1000,1000);
 

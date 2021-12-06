@@ -1,4 +1,4 @@
-const { readCharacters } = require('../../Shared/ReadInputs');
+const { readInput } = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const commonBits = (input, index) => {
@@ -88,7 +88,7 @@ const logic2 = (input) => {
 }
 
 const day3p1 = () => {
-  const input = readCharacters('../Data/Day3/day3.txt');
+  const input = readInput('../Data/Day3/day3.txt', 'ReadCharacters');
 
   let splitInput = input.map((item) => {
     return item.split('');
@@ -99,7 +99,7 @@ const day3p1 = () => {
 }
 
 const day3p2 = () => {
-  const input = readCharacters('../Data/Day3/day3.txt');
+  const input = readInput('../Data/Day3/day3.txt', 'ReadCharacters');
 
   const result = logic2(input);
   output(3, 2, result);

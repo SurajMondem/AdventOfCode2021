@@ -1,5 +1,5 @@
 // Shared Files Import
-const ReadNumbers = require("./Shared/ReadNumbers");
+const {readInput} = require("./Shared/ReadInputs");
 
 // Solutions Import
 const { day1p1, day1p2 } = require('./Solutions/Day1/index');
@@ -19,7 +19,7 @@ const { day12p1, day12p2} = require('./Solutions/Day12/index');
 
 // Test Calls
 const testFunction = () => {
-  const numbers = ReadNumbers('../Data/test/test.txt');
+  const numbers = readInput('../Data/test/test.txt', 'ReadNumbers');
   console.group("***Testing Group***");
   console.log(numbers.length);
   console.log(numbers);
@@ -42,14 +42,14 @@ const testFunction = () => {
 // day4p1();
 // day4p2();
 
-day5p1();
-day5p2();
+// day5p1();
+// day5p2();
 
 // day6p1();
 // day6p2();
 
-// day7p1();
-// day7p2();
+day7p1();
+day7p2();
 
 // day8p1();
 // day8p2();

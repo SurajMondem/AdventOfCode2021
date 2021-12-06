@@ -1,8 +1,8 @@
-const {readCharacters} = require('../../Shared/ReadInputs');
+const {readInput} = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const day2p1 = () => {
-  const input =  readCharacters('../Data/Day2/day2.txt');
+  const input =  readInput('../Data/Day2/day2.txt', 'ReadCharacters');
 
   let forward = 0;
   let depth = 0;
@@ -27,7 +27,7 @@ const day2p1 = () => {
 }
 
 const day2p2 = () => {
-  const input =  readCharacters('../Data/Day2/day2.txt');
+  const input =  readInput('../Data/Day2/day2.txt', 'ReadCharacters');
 
   let forward = 0;
   let depth = 0;

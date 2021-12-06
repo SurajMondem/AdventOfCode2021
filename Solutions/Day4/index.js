@@ -1,4 +1,4 @@
-const { readNumbers } = require('../../Shared/ReadInputs');
+const { readInput } = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const inputCleanUp = (inputs) => {
@@ -113,7 +113,7 @@ const bingoGame2 = (bingoInput, players) => {
 }
 
 const day4p1 = () => {
-  const inputs = readNumbers('../Data/Day4/day4.txt', true);
+  const inputs = readInput('../Data/Day4/day4.txt', '4');
 
   const {bingoInputs, players} = inputCleanUp(inputs);
   let gameResults = {};
@@ -132,7 +132,7 @@ const day4p1 = () => {
 }
 
 const day4p2 = () => {
-  const inputs = readNumbers('../Data/Day4/day4.txt', true);
+  const inputs = readInput('../Data/Day4/day4.txt', '4');
 
   const {bingoInputs, players} = inputCleanUp(inputs);
   let gameResults = {};

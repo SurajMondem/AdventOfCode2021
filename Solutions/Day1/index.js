@@ -1,4 +1,4 @@
-const {readNumbers} = require('../../Shared/ReadInputs');
+const {readInput} = require('../../Shared/ReadInputs');
 const output = require('../../Shared/Output');
 
 const compareNumbers = (input) => {
@@ -33,7 +33,7 @@ const sumNeighbors = (input) => {
 }
 
 const day1p1 = () => {
-  const input = readNumbers('../Data/Day1/day1.txt');
+  const input = readInput('../Data/Day1/day1.txt', 'ReadNumbers');
 
   const result = compareNumbers(input);
 
@@ -41,7 +41,7 @@ const day1p1 = () => {
 }
 
 const day1p2 = () => {
-  const input = readNumbers('../Data/Day1/day1.txt');
+  const input = readInput('../Data/Day1/day1.txt', 'ReadNumbers');
   const newInput = sumNeighbors(input);
   const result = compareNumbers(newInput);
   
