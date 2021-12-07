@@ -59,6 +59,15 @@ const readDay7Input = (filename) => {
   return lines;
 }
 
+const readDay8Input = (filename) => {
+  let all = fs.readFileSync(path.resolve(__dirname, filename)).toString();
+  let lines = all.split(',').map((elem) => {
+    return parseInt(elem, 10);
+  });
+
+  return lines;
+}
+
 const readInput = (filename, code) => {
   switch (code) {
     case 'ReadNumbers':
@@ -73,6 +82,8 @@ const readInput = (filename, code) => {
       return readDay6Input(filename);
     case '7':
       return readDay7Input(filename);
+    case '8':
+      return readDay8Input(filename);
     default:
       break;
   }

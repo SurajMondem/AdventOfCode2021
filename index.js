@@ -48,11 +48,11 @@ const testFunction = () => {
 // day6p1();
 // day6p2();
 
-day7p1();
-day7p2();
+// day7p1();
+// day7p2();
 
-// day8p1();
-// day8p2();
+day8p1();
+day8p2();
 
 // day9p1();
 // day9p2();
