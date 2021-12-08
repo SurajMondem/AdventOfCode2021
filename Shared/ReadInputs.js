@@ -61,8 +61,13 @@ const readDay7Input = (filename) => {
 
 const readDay8Input = (filename) => {
   let all = fs.readFileSync(path.resolve(__dirname, filename)).toString();
-  let lines = all.split(',').map((elem) => {
-    return parseInt(elem, 10);
+  let lines = all
+    .replace(/[\n\r]/g, '/')
+    .trim()
+    .split('//').map((elem) => {
+    return elem.trim().split("|").map((item) => {
+      return item.trim().split(" ");
+    });
   });
 
   return lines;
