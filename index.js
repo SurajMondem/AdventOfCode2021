@@ -60,11 +60,11 @@ const testFunction = () => {
 // day10p1();
 // day10p2();
 
-day11p1();
-day11p2();
+// day11p1();
+// day11p2();
 
-// day12p1();
-// day12p2();
+day12p1();
+day12p2();
 
 // day13p1();
 // day13p2();
