@@ -51,8 +51,8 @@ const testFunction = () => {
 // day7p1();
 // day7p2();
 
-day8p1();
-day8p2();
+// day8p1();
+// day8p2();
 
 // day9p1();
 // day9p2();
@@ -60,8 +60,8 @@ day8p2();
 // day10p1();
 // day10p2();
 
-// day11p1();
-// day11p2();
+day11p1();
+day11p2();
 
 // day12p1();
 // day12p2();
