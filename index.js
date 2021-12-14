@@ -14,6 +14,8 @@ const { day9p1, day9p2} = require('./Solutions/Day9/index');
 const { day10p1, day10p2} = require('./Solutions/Day10/index');
 const { day11p1, day11p2} = require('./Solutions/Day11/index');
 const { day12p1, day12p2} = require('./Solutions/Day12/index');
+const { day13p1, day13p2} = require('./Solutions/Day13/index');
+
 
 
 
@@ -63,11 +65,11 @@ const testFunction = () => {
 // day11p1();
 // day11p2();
 
-day12p1();
-day12p2();
+// day12p1();
+// day12p2();
 
-// day13p1();
-// day13p2();
+day13p1();
+day13p2();
 
 // day14p1();
 // day14p2();

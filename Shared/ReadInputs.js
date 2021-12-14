@@ -117,6 +117,15 @@ const readDay12Input = (filename) => {
   return lines;
 }
 
+const readDay13Input = (filename) => {
+  let all = fs.readFileSync(path.resolve(__dirname, filename)).toString();
+  all = all.replace(/[\n\r]/g, '/').trim();
+  let lines = all.split('////').map(elem => {
+    return elem.trim().split("//");
+  });
+  return lines;
+}
+
 
 const readInput = (filename, code) => {
   switch (code) {
@@ -142,6 +151,8 @@ const readInput = (filename, code) => {
       return readDay11Input(filename);
     case '12':
       return readDay12Input(filename);
+    case '13':
+      return readDay13Input(filename);
     default:
       break;
   }
